@@ -10,7 +10,6 @@
     document.querySelector(".linkedin").innerHTML = `${profileData.linkedin}`;
     document.querySelector(".job").innerHTML = `${profileData.job}`;
     document.querySelector(".location").innerHTML = `${profileData.location}`;
-    debugger;
     document.querySelector(".language").innerHTML = profileData.language.map(createLanguageItem).join("");
     document.querySelector(".formacao").innerHTML = profileData.formacao.map(createFormacaoItem).join("");
     document.querySelector(".experience").innerHTML = profileData.experiencia.map(createExperienceItem).join("");

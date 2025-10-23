@@ -6,6 +6,7 @@
     border-radius: 1rem;
     margin: 1rem 0;
     transition: 0.25s;
+    overflow-y: auto;
 }
 
 .accordion.open,
@@ -24,7 +25,7 @@
     background-color: transparent;
     color: #fff;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
@@ -59,5 +60,20 @@
     height: auto;
     opacity: 1;
     padding: 0 1rem 1rem 2rem;
+}
+
+.accordion.close {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.accordion.close .accordion-content {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .accordion-button {
+        font-size: 1.5rem;
+    }
 }
 
