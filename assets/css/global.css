@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'NeueMachina-Regular';
+    src: url('../fonts/NeueMachina-Regular.otf');
+}
+
+.container {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+}
+
+
+body {
+    /*Feminino
+    background: radial-gradient(circle at 20% 20%, #ff66cc, transparent 40%),
+                radial-gradient(circle at 80% 10%, #a866ff, transparent 40%),
+                radial-gradient(circle at 80% 80%, #66a3ff, transparent 40%),
+                radial-gradient(circle at 30% 90%, #ff6680, transparent 40%),
+                #000000; 
+    */
+    /*Masculino*/
+    background: 
+        radial-gradient(circle at 25% 20%, #0048ff, transparent 40%),
+        radial-gradient(circle at 80% 10%, #3a0ca3, transparent 40%),
+        radial-gradient(circle at 70% 80%, #00b4d8, transparent 40%),
+        radial-gradient(circle at 20% 90%, #560bad, transparent 40%),
+        #000;
+    background-blend-mode: screen;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 1024px;
+        margin: 1rem auto;
+    }
+}
+    

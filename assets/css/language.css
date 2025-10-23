@@ -1,0 +1,37 @@
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.language li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 1rem;
+    font-weight: 700;
+}  
+
+.language li::before {
+    content: "";
+    display: inline-block;
+    width: 0.625rem;
+    height: 0.625rem;
+    background-image: url("../imagem/icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: .25s;
+    margin-right: 0.5rem;
+}
+
+.language li:hover::before {
+    transform: scale(1.2);
+}
+
+.language li:hover {
+    cursor: pointer;
+}
