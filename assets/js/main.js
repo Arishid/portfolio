@@ -7,9 +7,8 @@
         eu sou o<br>
         ${profileData.nome}
     `;
-    document.querySelector(".linkedin").innerHTML = `${profileData.linkedin}`;
-    document.querySelector(".linkedin").href = `${profileData.linkedin}`;
-    document.querySelector(".linkedin").target = "_blank";
+    debugger;
+    document.querySelector(".linkedin a").href = `${profileData.linkedin}`;
     document.querySelector(".job").innerHTML = `${profileData.job}`;
     document.querySelector(".location").innerHTML = `${profileData.location}`;
     document.querySelector(".language").innerHTML = profileData.language.map(createLanguageItem).join("");
