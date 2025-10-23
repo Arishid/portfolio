@@ -11,11 +11,30 @@
     document.querySelector(".job").innerHTML = `${profileData.job}`;
     document.querySelector(".location").innerHTML = `${profileData.location}`;
     debugger;
-    document.querySelector(".language").innerHTML = createLanguageItem(profileData.language);
+    document.querySelector(".language").innerHTML = profileData.language.map(createLanguageItem).join("");
+    document.querySelector(".formacao").innerHTML = profileData.formacao.map(createFormacaoItem).join("");
+    document.querySelector(".experience").innerHTML = profileData.experiencia.map(createExperienceItem).join("");
 })();
 
 function createLanguageItem(language) {
-    const li = document.createElement("li");
-    li.textContent = language;
-    return li;
+    return `<li>${language}</li>`;
 }
+
+function createFormacaoItem(formacao) {
+    return `
+    <li>
+        <span class="title">${formacao.titulo}</span> 
+        <span class="subtitle">${formacao.ano} - ${formacao.instituicao}</span>
+    </li>`;
+}
+
+function createExperienceItem(experience) {
+    return `
+    <li>
+        <span class="title">${experience.titulo}</span> 
+        <span class="subtitle">${experience.ano} - ${experience.instituicao}</span>
+        <br>
+        ${experience.descricao}
+    </li>`;
+}
+
