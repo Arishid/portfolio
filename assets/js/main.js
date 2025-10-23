@@ -7,10 +7,9 @@
         eu sou o<br>
         ${profileData.nome}
     `;
-    document.querySelector(".email").textContent = `${profileData.email}`;
-    document.querySelector(".linkedin").textContent = `${profileData.linkedin}`;
-    document.querySelector(".job").textContent = `${profileData.job}`;
-    document.querySelector(".location").textContent = `${profileData.location}`;
+    document.querySelector(".linkedin").innerHTML = `${profileData.linkedin}`;
+    document.querySelector(".job").innerHTML = `${profileData.job}`;
+    document.querySelector(".location").innerHTML = `${profileData.location}`;
     debugger;
     document.querySelector(".language").innerHTML = createLanguageItem(profileData.language);
 })();
