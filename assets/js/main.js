@@ -7,7 +7,6 @@
         eu sou o<br>
         ${profileData.nome}
     `;
-    debugger;
     document.querySelector(".linkedin a").href = `${profileData.linkedin}`;
     document.querySelector(".job").innerHTML = `${profileData.job}`;
     document.querySelector(".location").innerHTML = `${profileData.location}`;
